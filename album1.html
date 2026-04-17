@@ -18,7 +18,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top shadow">
         <div class="container">
-           
+
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -33,95 +33,61 @@
     </nav>
 
     <div class="container my-5">
-    <h2 class="text-center mb-4">Galería de Prueba (Estilo Nativo)</h2>
-    
-    <div class="row gx-2 gy-2" id="gallery-test">
-        
-        <div class="col-3">
-            <a 
-               data-pswp-width="1200" 
-               data-pswp-height="800" 
-               target="_blank"
-               class="d-block gallery-item">
-                <img src="Images/descarga.png" 
-                     class="img-fluid rounded w-100" 
-                     alt="Descripción imagen 1" />
-            </a>
-        </div>
 
-        <div class="col-3">
-            <a  
-               data-pswp-width="1200" 
-               data-pswp-height="800" 
-               target="_blank"
-               class="d-block gallery-item">
-                <img src="Images/descarga.jpg" />
-            </a>
-        </div>
+        <div class="row gx-2 gy-2" id="gallery-test">
 
-        <div class="col-3">
-            <a 
-               data-pswp-width="800" 
-               data-pswp-height="1200" 
-               target="_blank"
-               class="d-block gallery-item">
-                <img src="Images/descarga.jpg" />
-            </a>
-        </div>
+            <div class="col-3">
+                <a href="Images/descarga.png" data-pswp-width="1200" data-pswp-height="800" target="_blank"
+                    class="d-block gallery-item">
+                    <img src="Images/descarga.png" class="img-fluid rounded w-100" alt="Descripción imagen 1" />
+                </a>
+            </div>
 
-        <div class="col-3">
-            <a 
-               data-pswp-width="1200" 
-               data-pswp-height="800" 
-               target="_blank"
-               class="d-block gallery-item">
-                <img src="Images/descarga.png" />
-            </a>
-        </div>
+            <div class="col-3">
+                <a data-pswp-width="1200" data-pswp-height="800" target="_blank" class="d-block gallery-item">
+                    <img src="Images/descarga.png" />
+                </a>
+            </div>
 
-        <div class="col-3">
-            <a 
-               data-pswp-width="1200" 
-               data-pswp-height="800" 
-               target="_blank"
-               class="d-block gallery-item">
-                <img src="Images/movil.jpg" />
-            </a>
-        </div>
+            <div class="col-3">
+                <a data-pswp-width="800" data-pswp-height="1200" target="_blank" class="d-block gallery-item">
+                    <img src="Images/descarga.png" />
+                </a>
+            </div>
 
-        <div class="col-3">
-            <a
-               data-pswp-width="1200" 
-               data-pswp-height="800" 
-               target="_blank"
-               class="d-block gallery-item">
-                <img src="Images/movil.jpg" />
-            </a>
-        </div>
+            <div class="col-3">
+                <a data-pswp-width="1200" data-pswp-height="800" target="_blank" class="d-block gallery-item">
+                    <img src="Images/descarga.png" />
+                </a>
+            </div>
 
-        <div class="col-3">
-            <a 
-               data-pswp-width="1200" 
-               data-pswp-height="800" 
-               target="_blank"
-               class="d-block gallery-item">
-                <img src="Images/desktop.png" />
-            </a>
-        </div>
+            <div class="col-3">
+                <a data-pswp-width="1200" data-pswp-height="800" target="_blank" class="d-block gallery-item">
+                    <img src="Images/descarga.png" />
+                </a>
+            </div>
 
-        <div class="col-3">
-            <a 
-               data-pswp-width="1200" 
-               data-pswp-height="800" 
-               target="_blank"
-               class="d-block gallery-item">
-                <img src="Images/movil.jpg" />
-            </a>
-        </div>
+            <div class="col-3">
+                <a data-pswp-width="1200" data-pswp-height="800" target="_blank" class="d-block gallery-item">
+                    <img src="Images/descarga.png" />
+                </a>
+            </div>
 
+            <div class="col-3">
+                <a data-pswp-width="1200" data-pswp-height="800" target="_blank" class="d-block gallery-item">
+                    <img src="Images/descarga.png" />
+                </a>
+            </div>
+
+            <div class="col-3">
+                <a data-pswp-width="1200" data-pswp-height="800" target="_blank" class="d-block gallery-item">
+                    <img src="Images/descarga.png" />
+                </a>
+            </div>
+
+        </div>
     </div>
-</div>
-   <!-- <h1>hola</h1>
+    <!-- <h1>hola</h1>
 
     <div class="row" id="my-gallery">
         <div class="col-md-4 mb-3">
@@ -147,10 +113,36 @@
         const lightbox = new PhotoSwipeLightbox({
             gallery: '#my-gallery', // El contenedor de tus fotos
             children: 'a',          // Los enlaces que abren las fotos
-            pswpModule: () => import('https://unpkg.com/photoswipe@5.4.3/dist/photoswipe.esm.js')
+            pswpModule: () => import('https://unpkg.com/photoswipe@5.4.3/dist/photoswipe.esm.js'),
+            // Esto asegura que los controles básicos estén activos
+            closeTitle: 'Cerrar galería',
+            zoomTitle: 'Aumentar'
         });
         lightbox.init();
+
+
+
     </script>
+
+    <style>
+        /* Hacer el botón de cerrar más grande y visible */
+        .pswp__button--close {
+            background-color: rgba(0, 0, 0, 0.3) !important;
+            /* Fondo semi-transparente */
+            border-radius: 50%;
+            /* Lo hace circular */
+            margin: 10px;
+            opacity: 1 !important;
+            /* Que siempre sea visible */
+            transform: scale(1.2);
+            /* Aumenta el tamaño un 20% */
+        }
+
+        /* Cambiar el color de la X a blanco puro */
+        .pswp__icn {
+            fill: #fff;
+        }
+    </style>
 </body>
 
 </html>
